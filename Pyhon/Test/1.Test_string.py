@@ -1,4 +1,7 @@
-tours=["haining","hangzhou","shanghai","guangzhou","sanya"]
-for tour in tours:
-    print(f"i can't wait to go {tour.title()}!")
-print("with ckk")
+numbers=[]
+for num in range(1,11):
+    numbers.append(num**3)
+
+print(numbers[:8])
+
+136 if
