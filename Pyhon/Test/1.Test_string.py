@@ -4,4 +4,6 @@ for num in range(1,11):
 
 print(numbers[:8])
 123456789
-fadsffadfs
+1111111111
+222222222
+333333333
