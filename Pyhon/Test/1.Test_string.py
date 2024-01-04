@@ -1,9 +1,4 @@
-numbers=[]
-for num in range(1,11):
-    numbers.append(num**3)
-
-print(numbers[:8])
-123456789
-1111111111
-
-2222222222
+#使用if 输出想要的车型
+cars=["benchi","baoma","aodi"]
+if not "benchi" in cars:
+    print("is in ")
