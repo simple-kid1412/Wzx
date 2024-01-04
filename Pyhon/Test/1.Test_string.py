@@ -1,6 +1,4 @@
-tours=["haining","hangzhou","shanghai","guangzhou","sanya"]
-for tour in tours:
-    print(f"i can't wait to go {tour.title()}!")
-print("with ckk")
-
-
+#使用if 输出想要的车型
+cars=["benchi","baoma","aodi"]
+if not "benchi" in cars:
+    print("is in ")
