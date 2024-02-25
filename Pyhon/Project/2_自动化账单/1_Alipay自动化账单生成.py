@@ -1,6 +1,6 @@
 import csv
 import pymysql
-file='alipay_record_20240222_203230.csv'
+file='alipay_record_20240224_225350.csv'
 with open(file) as csvFile:          
     csv_reader = csv.reader(csvFile)    #读文件 生成一个 csv文件的READER对象
     listReport = list(csv_reader)      
