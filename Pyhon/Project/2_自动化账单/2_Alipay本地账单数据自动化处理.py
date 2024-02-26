@@ -7,6 +7,8 @@ with open(file) as csvFile:
 
 detail_data=listReport[25:]             #删除不需要的行 结果传入detail_data
 
+for i in range(0,len(detail_data)):
+    print(detail_data[i])
 
 
 for row in detail_data:
@@ -14,7 +16,6 @@ for row in detail_data:
     del row[6]
     del row[6]
     del row[6]
-    del row[8]
 
 for i in range(0,len(detail_data)):
     detail_data[i]=[item.replace('\t', '')  for item in detail_data[i]]  #处理商家订单号末尾的制表符字符串
