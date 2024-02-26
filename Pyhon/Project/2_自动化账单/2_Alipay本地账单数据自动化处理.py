@@ -6,6 +6,9 @@ with open(file) as csvFile:
     listReport = list(csv_reader)      
 
 detail_data=listReport[25:]             #删除不需要的行 结果传入detail_data
+
+
+
 for row in detail_data:
     del row[3]                          #删除不需要的列 
     del row[6]
