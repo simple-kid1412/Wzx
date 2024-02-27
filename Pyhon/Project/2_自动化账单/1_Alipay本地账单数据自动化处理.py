@@ -16,7 +16,7 @@ for row in detail_data:
     del row[6]
     del row[6]
     del row[6]
-
+  
 for i in range(0,len(detail_data)):
     detail_data[i]=[item.replace('\t', '')  for item in detail_data[i]]  #处理商家订单号末尾的制表符字符串
     
