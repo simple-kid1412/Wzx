@@ -12,3 +12,5 @@ conn.commit()   # 提交事务
 
 cursor.close()  #关闭游标
 conn.close()    #关闭连接
+
+
