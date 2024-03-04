@@ -12,7 +12,6 @@ for i in range(0,len(detail_data)):
 
 
 for row in detail_data:
-    del row[3]                          #删除不需要的列 
     del row[6]
     del row[6]
     del row[6]

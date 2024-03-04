@@ -1,3 +1,5 @@
+-- 0.更新商家订单号的空值为 null(不是null会筛选出来)
+update journal set `商家订单号`=null where `商家订单号`='';
 -- 1 调整分类
 -- 1.1 调整备注分类
 update journal 
@@ -12,7 +14,7 @@ set `交易分类` = case
 									ELSE 交易分类
 								END;
 								
--- 1.3 更新退款交易分类为 支出的商家订单号分类
+-- 1.3 更新收支类型
 UPDATE journal a
 JOIN (
   SELECT DISTINCT `商家订单号`, 交易分类
@@ -26,9 +28,8 @@ WHERE a.收支='不计收支';
 -- 2.1 删除自动转入  
 DELETE from journal where `商品说明` like '%自动转入%';
 -- 2.2 更新'投资理财'的收支类型为 '收入'
-update journal set `收支`='收入' where `交易分类`='投资理财';
--- 2.3.更新商家订单号的空值为 null(不是null会筛选出来)
-update journal set `商家订单号`=null where `商家订单号`='';
+update journal set `收支`='收入' where `交易分类`='投资理财' and `商品说明` like '%收益发放%';
+
 
 
 -- 3 数据计算
